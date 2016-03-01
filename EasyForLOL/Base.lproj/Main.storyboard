@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nDM-eo-WfO">
+            <objects>
+                <viewController storyboardIdentifier="first" id="Es1-KM-FzV" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ck7-RG-yYD"/>
+                        <viewControllerLayoutGuide type="bottom" id="hra-hB-LP8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R8X-vO-AcH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-us-iEw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-gi-pyi">
+                                        <rect key="frame" x="20" y="0.0" width="2400" height="600"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lanch1" translatesAutoresizingMaskIntoConstraints="NO" id="sq2-YH-Cva">
+                                                <rect key="frame" x="600" y="0.0" width="600" height="600"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lanch2" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-wh-NGb">
+                                                <rect key="frame" x="1200" y="0.0" width="600" height="600"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lanch4" translatesAutoresizingMaskIntoConstraints="NO" id="U8A-1F-k7p">
+                                                <rect key="frame" x="1800" y="0.0" width="600" height="600"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJZ-QT-m0P">
+                                                <rect key="frame" x="322" y="480" width="46" height="30"/>
+                                                <color key="backgroundColor" red="0.95294117649999999" green="0.34597522139999998" blue="0.1143999641" alpha="0.64000000000000001" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="XVL-SN-gJK"/>
+                                                    <constraint firstAttribute="height" constant="30" id="pEO-By-bD6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="19"/>
+                                                <state key="normal" title="开启">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginBtn:" destination="Es1-KM-FzV" eventType="touchUpInside" id="WNv-6s-XB8"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lanch3" translatesAutoresizingMaskIntoConstraints="NO" id="Axe-wo-h7w">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Axe-wo-h7w" firstAttribute="width" secondItem="Llt-gi-pyi" secondAttribute="width" multiplier="0.25" id="20B-Ai-tI5"/>
+                                            <constraint firstItem="U8A-1F-k7p" firstAttribute="centerY" secondItem="Llt-gi-pyi" secondAttribute="centerY" id="3NW-3g-RfG"/>
+                                            <constraint firstItem="U8A-1F-k7p" firstAttribute="width" secondItem="Llt-gi-pyi" secondAttribute="width" multiplier="0.25" id="96Q-z6-RFt"/>
+                                            <constraint firstItem="Axe-wo-h7w" firstAttribute="height" secondItem="Llt-gi-pyi" secondAttribute="height" id="Dzv-Ip-5zL"/>
+                                            <constraint firstItem="Fh3-wh-NGb" firstAttribute="centerY" secondItem="Llt-gi-pyi" secondAttribute="centerY" id="HCz-xh-LQk"/>
+                                            <constraint firstItem="U8A-1F-k7p" firstAttribute="centerX" secondItem="Llt-gi-pyi" secondAttribute="centerX" multiplier="1.75" id="LXq-fa-BaP"/>
+                                            <constraint firstItem="Axe-wo-h7w" firstAttribute="centerY" secondItem="Llt-gi-pyi" secondAttribute="centerY" id="RO5-XL-N9b"/>
+                                            <constraint firstItem="sq2-YH-Cva" firstAttribute="centerX" secondItem="Llt-gi-pyi" secondAttribute="centerX" multiplier="0.75" id="TcW-Lh-4gB"/>
+                                            <constraint firstItem="Fh3-wh-NGb" firstAttribute="height" secondItem="Llt-gi-pyi" secondAttribute="height" id="VNP-7y-OPe"/>
+                                            <constraint firstItem="sq2-YH-Cva" firstAttribute="height" secondItem="Llt-gi-pyi" secondAttribute="height" id="Vie-KS-h1a"/>
+                                            <constraint firstItem="sq2-YH-Cva" firstAttribute="width" secondItem="Llt-gi-pyi" secondAttribute="width" multiplier="0.25" id="XAc-Tg-okD"/>
+                                            <constraint firstItem="U8A-1F-k7p" firstAttribute="height" secondItem="Llt-gi-pyi" secondAttribute="height" id="dMZ-KK-s0s"/>
+                                            <constraint firstItem="sq2-YH-Cva" firstAttribute="centerY" secondItem="Llt-gi-pyi" secondAttribute="centerY" id="g5N-1q-R0U"/>
+                                            <constraint firstItem="Axe-wo-h7w" firstAttribute="centerX" secondItem="Llt-gi-pyi" secondAttribute="centerX" multiplier="0.25" id="pE8-k4-UU2"/>
+                                            <constraint firstItem="oJZ-QT-m0P" firstAttribute="centerX" secondItem="U8A-1F-k7p" secondAttribute="centerX" id="per-8X-eTL"/>
+                                            <constraint firstAttribute="bottom" secondItem="oJZ-QT-m0P" secondAttribute="bottom" constant="90" id="qSb-4F-XUa"/>
+                                            <constraint firstItem="Fh3-wh-NGb" firstAttribute="centerX" secondItem="Llt-gi-pyi" secondAttribute="centerX" multiplier="1.25" id="ueC-PY-RXU"/>
+                                            <constraint firstItem="Fh3-wh-NGb" firstAttribute="width" secondItem="Llt-gi-pyi" secondAttribute="width" multiplier="0.25" id="wV9-03-1c3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Llt-gi-pyi" firstAttribute="top" secondItem="o8Y-us-iEw" secondAttribute="top" id="2SN-0E-zWt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Llt-gi-pyi" secondAttribute="trailing" id="CP8-NF-ls5"/>
+                                    <constraint firstItem="Llt-gi-pyi" firstAttribute="leading" secondItem="o8Y-us-iEw" secondAttribute="leading" id="kPf-pn-W7z"/>
+                                    <constraint firstAttribute="bottom" secondItem="Llt-gi-pyi" secondAttribute="bottom" id="kma-1H-bos"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Es1-KM-FzV" id="yK0-6J-aH6"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-gC-HML">
+                                <rect key="frame" x="272" y="562" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.50944150399999999" green="1" blue="0.21676151769999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.95294117649999999" green="0.31116951459999997" blue="0.2029450663" alpha="0.64000000000000001" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o8Y-us-iEw" firstAttribute="top" secondItem="Ck7-RG-yYD" secondAttribute="bottom" constant="-20" id="ACx-fz-5Y1"/>
+                            <constraint firstItem="dbT-gC-HML" firstAttribute="centerX" secondItem="R8X-vO-AcH" secondAttribute="centerX" id="Kw4-8f-Oqq"/>
+                            <constraint firstItem="Llt-gi-pyi" firstAttribute="height" secondItem="R8X-vO-AcH" secondAttribute="height" id="M2H-jb-UoN"/>
+                            <constraint firstItem="hra-hB-LP8" firstAttribute="top" secondItem="o8Y-us-iEw" secondAttribute="bottom" id="TD5-nA-m3w"/>
+                            <constraint firstAttribute="trailing" secondItem="o8Y-us-iEw" secondAttribute="trailing" id="egL-PB-UfQ"/>
+                            <constraint firstItem="o8Y-us-iEw" firstAttribute="leading" secondItem="R8X-vO-AcH" secondAttribute="leading" id="gh6-Ps-6Ov"/>
+                            <constraint firstItem="Llt-gi-pyi" firstAttribute="width" secondItem="R8X-vO-AcH" secondAttribute="width" multiplier="4" id="heA-NO-8WE"/>
+                            <constraint firstItem="hra-hB-LP8" firstAttribute="top" secondItem="dbT-gC-HML" secondAttribute="bottom" constant="50" id="rPR-kt-fso"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BTN" destination="oJZ-QT-m0P" id="tLP-Z6-shS"/>
+                        <outlet property="pageControl" destination="dbT-gC-HML" id="M4d-az-ubA"/>
+                        <outlet property="scrollView" destination="o8Y-us-iEw" id="tpA-FO-4tf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="riN-pg-4En" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lanch1" width="1080" height="1920"/>
+        <image name="Lanch2" width="1242" height="2208"/>
+        <image name="Lanch3" width="640" height="1136"/>
+        <image name="Lanch4" width="1242" height="2208"/>
+    </resources>
+</document>

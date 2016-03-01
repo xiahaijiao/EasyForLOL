@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--英雄介绍-->
+        <scene sceneID="3I6-Os-2lV">
+            <objects>
+                <tableViewController id="z5F-0v-9Mj" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="66" sectionHeaderHeight="18" sectionFooterHeight="18" id="pdD-ob-33D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="kbz-dC-gbO">
+                                <rect key="frame" x="0.0" y="114" width="600" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kbz-dC-gbO" id="LbF-eV-V58">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="65"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="z5F-0v-9Mj" id="bdd-uk-gMK"/>
+                            <outlet property="delegate" destination="z5F-0v-9Mj" id="pSR-LQ-yBB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="英雄介绍" id="VzY-W5-3md"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UqC-Y0-fAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611" y="-482"/>
+        </scene>
+        <!--Free Heros-->
+        <scene sceneID="Gx2-4X-p07">
+            <objects>
+                <viewController storyboardIdentifier="Free" id="kfW-I3-pg0" customClass="FreeHeros" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7IS-co-6bQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="WhX-NJ-geU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gju-x3-TeK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npb-xh-qYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642.5" y="345.5"/>
+        </scene>
+        <!--All Heros-->
+        <scene sceneID="yab-0e-k1z">
+            <objects>
+                <viewController storyboardIdentifier="All" id="MDU-pa-pve" customClass="AllHeros" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wQ0-gm-huf"/>
+                        <viewControllerLayoutGuide type="bottom" id="eog-zn-9SM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yIz-pr-fGM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srn-xR-WG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1166" y="346"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KMC-m2-pYj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vb7-Wx-z6t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oIq-gX-5fj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="z5F-0v-9Mj" kind="relationship" relationship="rootViewController" id="5Vq-I3-Yhr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sCC-5H-Ukw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="-482"/>
+        </scene>
+    </scenes>
+</document>

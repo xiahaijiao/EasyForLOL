@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Video1-->
+        <scene sceneID="dng-Ig-Z4z">
+            <objects>
+                <viewController storyboardIdentifier="VCSB1" id="Xwd-Ye-QvH" customClass="VCVideo1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oPe-3t-o3m"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Bp-9a-bsa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sYi-KB-LxD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.88680228095254143" green="0.89993686868686873" blue="0.4018623491123347" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNa-TO-CVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="444"/>
+        </scene>
+        <!--Video2-->
+        <scene sceneID="XIn-jk-UHS">
+            <objects>
+                <viewController storyboardIdentifier="VCSB2" id="HNQ-Qk-TeB" customClass="VCVideo2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="30u-3M-IMI"/>
+                        <viewControllerLayoutGuide type="bottom" id="g6M-kW-DbT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pBf-HU-gNr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89993686868686873" green="0.63078913193702268" blue="0.28150521954186342" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydm-oM-Mv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510.5" y="443.5"/>
+        </scene>
+        <!--Video3-->
+        <scene sceneID="Wsj-Xm-fUJ">
+            <objects>
+                <viewController storyboardIdentifier="VCSB3" id="hgj-af-IAg" customClass="VCVideo3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vIs-RN-NFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vas-bk-dsf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DGj-zg-l0t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.55901968493440746" green="0.89993686868686873" blue="0.11666477809572733" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVh-Zw-m2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926.5" y="443.5"/>
+        </scene>
+    </scenes>
+</document>
